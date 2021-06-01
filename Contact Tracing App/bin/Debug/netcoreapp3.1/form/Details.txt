@@ -1,0 +1,6 @@
+First Name: Bernice Elliana
+Middle Name : Baluyot
+Last Name: Tuno
+Age: 13
+Address: Concepcion Uno
+Contact Number: 09123456789
