@@ -17,20 +17,37 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
-
         private void confirm_Click(object sender, EventArgs e)
         {
-            StreamWriter A = new StreamWriter(Application.StartupPath + "\\form\\" + "Details.txt");
+            DialogResult result = MessageBox.Show("Are you sure you want to submit?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
-            A.WriteLine(firstname.Text + ":" + " " + txt_firstname.Text);
-            A.WriteLine(middlename.Text + ":" + " " + txt_middlename.Text);
-            A.WriteLine(lastname.Text + ":" + " " + txt_lastname.Text);
-            A.WriteLine(age.Text + ":" + " " + txt_age.Text);
-            A.WriteLine(address.Text + ":" + " " + txt_address.Text);
-            A.WriteLine(contact_num.Text + ":" + " " + txt_contact.Text);
+            if (result == DialogResult.Yes)
+            {
+                using (StreamWriter stream = File.AppendText("ContactForm.txt"))
+                {
+                    stream.Write("DETAILS\n");
+                    stream.WriteLine(txt_firstname.Text);
+                    stream.WriteLine(txt_middlename.Text);
+                    stream.WriteLine(txt_lastname.Text);
+                    stream.WriteLine(txt_age.Text);
+                    stream.WriteLine(txt_address.Text);
+                    stream.WriteLine(txt_contact.Text);
+                    stream.WriteLine(txt_email.Text);
+                    stream.WriteLine(txt_temp.Text);
+                    stream.WriteLine(dateTimePicker1.Value);
+                    stream.Close();
+                    DialogResult submission = MessageBox.Show("Thank you for filling out the form! Have a nice day!", "Success!");
 
-            A.Close();
-
+                    if (submission == DialogResult.OK)
+                    {
+                        System.Windows.Forms.Application.Exit();
+                    }
+                    else if (result == DialogResult.No)
+                    {
+                        System.Windows.Forms.Application.Exit();
+                    }
+                }
+            }
         }
     }
 }

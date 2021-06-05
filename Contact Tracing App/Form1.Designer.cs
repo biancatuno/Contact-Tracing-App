@@ -43,19 +43,20 @@ namespace Contact_Tracing_App
             this.address = new System.Windows.Forms.Label();
             this.txt_contact = new System.Windows.Forms.TextBox();
             this.contact_num = new System.Windows.Forms.Label();
-            this.add_details = new System.Windows.Forms.Button();
-            this.confirm = new System.Windows.Forms.Button();
+            this.Confirm = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.temp = new System.Windows.Forms.Label();
+            this.txt_temp = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.Email = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.date = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // firstname
             // 
             this.firstname.AutoSize = true;
-            this.firstname.Location = new System.Drawing.Point(79, 49);
+            this.firstname.Location = new System.Drawing.Point(44, 97);
             this.firstname.Name = "firstname";
             this.firstname.Size = new System.Drawing.Size(80, 20);
             this.firstname.TabIndex = 0;
@@ -63,14 +64,14 @@ namespace Contact_Tracing_App
             // 
             // txt_firstname
             // 
-            this.txt_firstname.Location = new System.Drawing.Point(222, 42);
+            this.txt_firstname.Location = new System.Drawing.Point(171, 91);
             this.txt_firstname.Name = "txt_firstname";
             this.txt_firstname.Size = new System.Drawing.Size(323, 27);
             this.txt_firstname.TabIndex = 1;
             // 
             // txt_middlename
             // 
-            this.txt_middlename.Location = new System.Drawing.Point(222, 96);
+            this.txt_middlename.Location = new System.Drawing.Point(171, 126);
             this.txt_middlename.Name = "txt_middlename";
             this.txt_middlename.Size = new System.Drawing.Size(323, 27);
             this.txt_middlename.TabIndex = 3;
@@ -78,15 +79,15 @@ namespace Contact_Tracing_App
             // middlename
             // 
             this.middlename.AutoSize = true;
-            this.middlename.Location = new System.Drawing.Point(79, 103);
+            this.middlename.Location = new System.Drawing.Point(27, 130);
             this.middlename.Name = "middlename";
-            this.middlename.Size = new System.Drawing.Size(104, 20);
+            this.middlename.Size = new System.Drawing.Size(97, 20);
             this.middlename.TabIndex = 2;
-            this.middlename.Text = "Middle Name ";
+            this.middlename.Text = "Middle Initial";
             // 
             // txt_lastname
             // 
-            this.txt_lastname.Location = new System.Drawing.Point(222, 151);
+            this.txt_lastname.Location = new System.Drawing.Point(171, 161);
             this.txt_lastname.Name = "txt_lastname";
             this.txt_lastname.Size = new System.Drawing.Size(323, 27);
             this.txt_lastname.TabIndex = 5;
@@ -94,7 +95,7 @@ namespace Contact_Tracing_App
             // lastname
             // 
             this.lastname.AutoSize = true;
-            this.lastname.Location = new System.Drawing.Point(79, 158);
+            this.lastname.Location = new System.Drawing.Point(52, 163);
             this.lastname.Name = "lastname";
             this.lastname.Size = new System.Drawing.Size(79, 20);
             this.lastname.TabIndex = 4;
@@ -102,7 +103,7 @@ namespace Contact_Tracing_App
             // 
             // txt_age
             // 
-            this.txt_age.Location = new System.Drawing.Point(222, 203);
+            this.txt_age.Location = new System.Drawing.Point(171, 195);
             this.txt_age.Name = "txt_age";
             this.txt_age.Size = new System.Drawing.Size(323, 27);
             this.txt_age.TabIndex = 7;
@@ -110,7 +111,7 @@ namespace Contact_Tracing_App
             // age
             // 
             this.age.AutoSize = true;
-            this.age.Location = new System.Drawing.Point(79, 206);
+            this.age.Location = new System.Drawing.Point(88, 196);
             this.age.Name = "age";
             this.age.Size = new System.Drawing.Size(36, 20);
             this.age.TabIndex = 6;
@@ -118,7 +119,7 @@ namespace Contact_Tracing_App
             // 
             // txt_address
             // 
-            this.txt_address.Location = new System.Drawing.Point(222, 248);
+            this.txt_address.Location = new System.Drawing.Point(171, 229);
             this.txt_address.Multiline = true;
             this.txt_address.Name = "txt_address";
             this.txt_address.Size = new System.Drawing.Size(323, 61);
@@ -127,7 +128,7 @@ namespace Contact_Tracing_App
             // address
             // 
             this.address.AutoSize = true;
-            this.address.Location = new System.Drawing.Point(79, 262);
+            this.address.Location = new System.Drawing.Point(62, 229);
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(62, 20);
             this.address.TabIndex = 8;
@@ -135,7 +136,7 @@ namespace Contact_Tracing_App
             // 
             // txt_contact
             // 
-            this.txt_contact.Location = new System.Drawing.Point(222, 328);
+            this.txt_contact.Location = new System.Drawing.Point(171, 296);
             this.txt_contact.Name = "txt_contact";
             this.txt_contact.Size = new System.Drawing.Size(323, 27);
             this.txt_contact.TabIndex = 11;
@@ -143,98 +144,95 @@ namespace Contact_Tracing_App
             // contact_num
             // 
             this.contact_num.AutoSize = true;
-            this.contact_num.Location = new System.Drawing.Point(79, 335);
+            this.contact_num.Location = new System.Drawing.Point(37, 300);
             this.contact_num.Name = "contact_num";
-            this.contact_num.Size = new System.Drawing.Size(118, 20);
+            this.contact_num.Size = new System.Drawing.Size(87, 20);
             this.contact_num.TabIndex = 10;
-            this.contact_num.Text = "Contact Number";
+            this.contact_num.Text = "Contact No.";
             // 
-            // add_details
+            // Confirm
             // 
-            this.add_details.Location = new System.Drawing.Point(370, 382);
-            this.add_details.Name = "add_details";
-            this.add_details.Size = new System.Drawing.Size(175, 29);
-            this.add_details.TabIndex = 12;
-            this.add_details.Text = "Add more details";
-            this.add_details.UseVisualStyleBackColor = true;
-            // 
-            // confirm
-            // 
-            this.confirm.Location = new System.Drawing.Point(567, 382);
-            this.confirm.Name = "confirm";
-            this.confirm.Size = new System.Drawing.Size(94, 29);
-            this.confirm.TabIndex = 13;
-            this.confirm.Text = "Confirm";
-            this.confirm.UseVisualStyleBackColor = true;
-            this.confirm.Click += new System.EventHandler(this.confirm_Click);
+            this.Confirm.Location = new System.Drawing.Point(396, 445);
+            this.Confirm.Name = "Confirm";
+            this.Confirm.Size = new System.Drawing.Size(98, 34);
+            this.Confirm.TabIndex = 13;
+            this.Confirm.Text = "Confirm";
+            this.Confirm.UseVisualStyleBackColor = true;
+            this.Confirm.Click += new System.EventHandler(this.confirm_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(551, 248);
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Heavy", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(47, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(15, 22);
+            this.label1.Size = new System.Drawing.Size(447, 43);
             this.label1.TabIndex = 14;
-            this.label1.Text = "*";
+            this.label1.Text = "CONTACT TRACING FORM";
             // 
-            // label2
+            // temp
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(551, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(15, 22);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "*";
+            this.temp.AutoSize = true;
+            this.temp.Location = new System.Drawing.Point(38, 366);
+            this.temp.Name = "temp";
+            this.temp.Size = new System.Drawing.Size(93, 20);
+            this.temp.TabIndex = 15;
+            this.temp.Text = "Temperature";
             // 
-            // label3
+            // txt_temp
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(551, 203);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(15, 22);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "*";
+            this.txt_temp.Location = new System.Drawing.Point(171, 366);
+            this.txt_temp.Name = "txt_temp";
+            this.txt_temp.Size = new System.Drawing.Size(322, 27);
+            this.txt_temp.TabIndex = 16;
             // 
-            // label4
+            // txt_email
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(551, 151);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(15, 22);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "*";
+            this.txt_email.Location = new System.Drawing.Point(171, 330);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(323, 27);
+            this.txt_email.TabIndex = 17;
             // 
-            // label5
+            // Email
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(551, 328);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(15, 22);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "*";
+            this.Email.AutoSize = true;
+            this.Email.Location = new System.Drawing.Point(72, 333);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(52, 20);
+            this.Email.TabIndex = 18;
+            this.Email.Text = "E-mail";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(171, 404);
+            this.dateTimePicker1.MinDate = new System.DateTime(2020, 3, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(111, 27);
+            this.dateTimePicker1.TabIndex = 19;
+            // 
+            // date
+            // 
+            this.date.AutoSize = true;
+            this.date.Location = new System.Drawing.Point(83, 409);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(41, 20);
+            this.date.TabIndex = 20;
+            this.date.Text = "Date";
             // 
             // contact_tracing_app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 450);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label5);
+            this.ClientSize = new System.Drawing.Size(552, 501);
+            this.Controls.Add(this.date);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.txt_email);
+            this.Controls.Add(this.txt_temp);
+            this.Controls.Add(this.temp);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.confirm);
-            this.Controls.Add(this.add_details);
+            this.Controls.Add(this.Confirm);
             this.Controls.Add(this.txt_contact);
             this.Controls.Add(this.contact_num);
             this.Controls.Add(this.txt_address);
@@ -250,6 +248,7 @@ namespace Contact_Tracing_App
             this.MaximizeBox = false;
             this.Name = "contact_tracing_app";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User Registration - Sign Up Form for Contract Tracing";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -270,14 +269,15 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label address;
         private System.Windows.Forms.TextBox txt_contact;
         private System.Windows.Forms.Label contact_num;
-        private System.Windows.Forms.Button add_details;
-        private System.Windows.Forms.Button confirm;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button Confirm;
         private readonly EventHandler label1_Click;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label temp;
+        private System.Windows.Forms.TextBox txt_temp;
+        private System.Windows.Forms.TextBox txt_email;
+        private System.Windows.Forms.Label Email;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label date;
     }
 }
 
