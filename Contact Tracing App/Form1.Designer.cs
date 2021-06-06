@@ -51,6 +51,7 @@ namespace Contact_Tracing_App
             this.Email = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.date = new System.Windows.Forms.Label();
+            this.form2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstname
@@ -152,7 +153,7 @@ namespace Contact_Tracing_App
             // 
             // Confirm
             // 
-            this.Confirm.Location = new System.Drawing.Point(396, 445);
+            this.Confirm.Location = new System.Drawing.Point(396, 460);
             this.Confirm.Name = "Confirm";
             this.Confirm.Size = new System.Drawing.Size(98, 34);
             this.Confirm.TabIndex = 13;
@@ -220,11 +221,22 @@ namespace Contact_Tracing_App
             this.date.TabIndex = 20;
             this.date.Text = "Date";
             // 
+            // form2
+            // 
+            this.form2.Location = new System.Drawing.Point(277, 460);
+            this.form2.Name = "form2";
+            this.form2.Size = new System.Drawing.Size(98, 32);
+            this.form2.TabIndex = 21;
+            this.form2.Text = "Get Data";
+            this.form2.UseVisualStyleBackColor = true;
+            this.form2.Click += new System.EventHandler(this.form2_Click);
+            // 
             // contact_tracing_app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 501);
+            this.ClientSize = new System.Drawing.Size(552, 519);
+            this.Controls.Add(this.form2);
             this.Controls.Add(this.date);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Email);
@@ -278,6 +290,7 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label Email;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label date;
+        private System.Windows.Forms.Button form2;
     }
 }
 

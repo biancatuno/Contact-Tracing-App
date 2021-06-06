@@ -17,6 +17,7 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
+
         private void confirm_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Are you sure you want to submit?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
@@ -25,6 +26,7 @@ namespace Contact_Tracing_App
             {
                 using (StreamWriter stream = File.AppendText("ContactForm.txt"))
                 {
+                    stream.Write(" \n");
                     stream.Write("DETAILS\n");
                     stream.WriteLine(txt_firstname.Text);
                     stream.WriteLine(txt_middlename.Text);
@@ -48,6 +50,12 @@ namespace Contact_Tracing_App
                     }
                 }
             }
+        }
+
+        private void form2_Click(object sender, EventArgs e)
+        {
+            user_info f2 = new user_info();
+            f2.Show();
         }
     }
 }
