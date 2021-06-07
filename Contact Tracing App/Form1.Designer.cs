@@ -235,6 +235,7 @@ namespace Contact_Tracing_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(552, 519);
             this.Controls.Add(this.form2);
             this.Controls.Add(this.date);
