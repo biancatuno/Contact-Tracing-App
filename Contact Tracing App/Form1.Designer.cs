@@ -171,10 +171,11 @@ namespace Contact_Tracing_App
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Heavy", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(47, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(447, 43);
+            this.label1.Size = new System.Drawing.Size(449, 45);
             this.label1.TabIndex = 14;
             this.label1.Text = "CONTACT TRACING FORM";
             // 
@@ -245,7 +246,7 @@ namespace Contact_Tracing_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(552, 519);
             this.Controls.Add(this.form2);
             this.Controls.Add(this.date);

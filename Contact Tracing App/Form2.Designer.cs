@@ -50,7 +50,6 @@ namespace Contact_Tracing_App
             // 
             // open_file
             // 
-            this.open_file.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.open_file.Location = new System.Drawing.Point(403, 159);
             this.open_file.Name = "open_file";
             this.open_file.Size = new System.Drawing.Size(125, 34);
