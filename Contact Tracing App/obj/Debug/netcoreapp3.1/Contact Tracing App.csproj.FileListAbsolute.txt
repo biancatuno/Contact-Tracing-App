@@ -4,7 +4,6 @@ D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\bin\Debug\netcorea
 D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\bin\Debug\netcoreapp3.1\Contact Tracing App.runtimeconfig.dev.json
 D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\bin\Debug\netcoreapp3.1\Contact Tracing App.dll
 D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\bin\Debug\netcoreapp3.1\Contact Tracing App.pdb
-D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\obj\Debug\netcoreapp3.1\Contact Tracing App.csprojAssemblyReference.cache
 D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\obj\Debug\netcoreapp3.1\Contact_Tracing_App.contact_tracing_app.resources
 D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\obj\Debug\netcoreapp3.1\Contact Tracing App.csproj.GenerateResource.cache
 D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\obj\Debug\netcoreapp3.1\Contact Tracing App.AssemblyInfoInputs.cache
@@ -14,3 +13,4 @@ D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\obj\Debug\netcorea
 D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\obj\Debug\netcoreapp3.1\Contact Tracing App.pdb
 D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\obj\Debug\netcoreapp3.1\Contact Tracing App.genruntimeconfig.cache
 D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\obj\Debug\netcoreapp3.1\Contact_Tracing_App.user_info.resources
+D:\2 kool 4 iskul\OOP\Contact Tracing App\Contact Tracing App\obj\Debug\netcoreapp3.1\Contact Tracing App.csproj.AssemblyReference.cache

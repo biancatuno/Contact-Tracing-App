@@ -31,6 +31,7 @@ namespace Contact_Tracing_App
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(contact_tracing_app));
             this.firstname = new System.Windows.Forms.Label();
             this.txt_firstname = new System.Windows.Forms.TextBox();
             this.txt_middlename = new System.Windows.Forms.TextBox();
@@ -57,9 +58,10 @@ namespace Contact_Tracing_App
             // firstname
             // 
             this.firstname.AutoSize = true;
+            this.firstname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.firstname.Location = new System.Drawing.Point(44, 97);
             this.firstname.Name = "firstname";
-            this.firstname.Size = new System.Drawing.Size(80, 20);
+            this.firstname.Size = new System.Drawing.Size(86, 20);
             this.firstname.TabIndex = 0;
             this.firstname.Text = "First Name";
             // 
@@ -80,9 +82,10 @@ namespace Contact_Tracing_App
             // middlename
             // 
             this.middlename.AutoSize = true;
+            this.middlename.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.middlename.Location = new System.Drawing.Point(27, 130);
             this.middlename.Name = "middlename";
-            this.middlename.Size = new System.Drawing.Size(97, 20);
+            this.middlename.Size = new System.Drawing.Size(101, 20);
             this.middlename.TabIndex = 2;
             this.middlename.Text = "Middle Initial";
             // 
@@ -96,9 +99,10 @@ namespace Contact_Tracing_App
             // lastname
             // 
             this.lastname.AutoSize = true;
+            this.lastname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lastname.Location = new System.Drawing.Point(52, 163);
             this.lastname.Name = "lastname";
-            this.lastname.Size = new System.Drawing.Size(79, 20);
+            this.lastname.Size = new System.Drawing.Size(84, 20);
             this.lastname.TabIndex = 4;
             this.lastname.Text = "Last Name";
             // 
@@ -112,9 +116,10 @@ namespace Contact_Tracing_App
             // age
             // 
             this.age.AutoSize = true;
+            this.age.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.age.Location = new System.Drawing.Point(88, 196);
             this.age.Name = "age";
-            this.age.Size = new System.Drawing.Size(36, 20);
+            this.age.Size = new System.Drawing.Size(37, 20);
             this.age.TabIndex = 6;
             this.age.Text = "Age";
             // 
@@ -129,9 +134,10 @@ namespace Contact_Tracing_App
             // address
             // 
             this.address.AutoSize = true;
+            this.address.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.address.Location = new System.Drawing.Point(62, 229);
             this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(62, 20);
+            this.address.Size = new System.Drawing.Size(66, 20);
             this.address.TabIndex = 8;
             this.address.Text = "Address";
             // 
@@ -145,9 +151,10 @@ namespace Contact_Tracing_App
             // contact_num
             // 
             this.contact_num.AutoSize = true;
+            this.contact_num.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.contact_num.Location = new System.Drawing.Point(37, 300);
             this.contact_num.Name = "contact_num";
-            this.contact_num.Size = new System.Drawing.Size(87, 20);
+            this.contact_num.Size = new System.Drawing.Size(92, 20);
             this.contact_num.TabIndex = 10;
             this.contact_num.Text = "Contact No.";
             // 
@@ -174,9 +181,10 @@ namespace Contact_Tracing_App
             // temp
             // 
             this.temp.AutoSize = true;
+            this.temp.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.temp.Location = new System.Drawing.Point(38, 366);
             this.temp.Name = "temp";
-            this.temp.Size = new System.Drawing.Size(93, 20);
+            this.temp.Size = new System.Drawing.Size(99, 20);
             this.temp.TabIndex = 15;
             this.temp.Text = "Temperature";
             // 
@@ -197,9 +205,10 @@ namespace Contact_Tracing_App
             // Email
             // 
             this.Email.AutoSize = true;
+            this.Email.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Email.Location = new System.Drawing.Point(72, 333);
             this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(52, 20);
+            this.Email.Size = new System.Drawing.Size(53, 20);
             this.Email.TabIndex = 18;
             this.Email.Text = "E-mail";
             // 
@@ -215,9 +224,10 @@ namespace Contact_Tracing_App
             // date
             // 
             this.date.AutoSize = true;
+            this.date.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.date.Location = new System.Drawing.Point(83, 409);
             this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(41, 20);
+            this.date.Size = new System.Drawing.Size(42, 20);
             this.date.TabIndex = 20;
             this.date.Text = "Date";
             // 
@@ -258,6 +268,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.middlename);
             this.Controls.Add(this.txt_firstname);
             this.Controls.Add(this.firstname);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "contact_tracing_app";
             this.ShowIcon = false;
